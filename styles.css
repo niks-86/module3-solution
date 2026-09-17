@@ -12,29 +12,28 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
 
-    color: #f4dce3;
+    color: #f3dce3;
 
     background:
         radial-gradient(
-            circle at 20% 20%,
-            rgba(150, 25, 55, 0.28),
+            circle at 15% 15%,
+            rgba(163, 30, 60, 0.30),
             transparent 30%
         ),
         radial-gradient(
-            circle at 80% 80%,
-            rgba(210, 45, 80, 0.12),
+            circle at 85% 75%,
+            rgba(214, 54, 87, 0.14),
             transparent 35%
         ),
         linear-gradient(
             135deg,
             #050505,
-            #14070c,
-            #280914
+            #13070c,
+            #2a0915
         );
 
     min-height: 100vh;
 }
-
 
 
 /* =================================
@@ -54,12 +53,12 @@ body {
         linear-gradient(
             90deg,
             #050505,
-            #12070b,
+            #15080d,
             #050505
         );
 
     box-shadow:
-        0 8px 30px rgba(0, 0, 0, 0.65);
+        0 8px 30px rgba(0, 0, 0, 0.7);
 
     position: relative;
 
@@ -71,11 +70,9 @@ body {
 
     position: absolute;
 
-    bottom: 0;
-
     left: 0;
-
     right: 0;
+    bottom: 0;
 
     height: 2px;
 
@@ -83,13 +80,12 @@ body {
         linear-gradient(
             90deg,
             transparent,
-            #8d1d39,
-            #df5c78,
-            #8d1d39,
+            #8d1c39,
+            #df5b78,
+            #8d1c39,
             transparent
         );
 }
-
 
 .navbar-brand {
     height: 72px;
@@ -104,19 +100,19 @@ body {
 }
 
 .brand-symbol {
-    color: #d84d6d;
-
-    margin-right: 7px;
+    color: #db4e70;
 
     font-size: 12px;
+
+    margin-right: 7px;
 }
 
 .brand-name {
-    color: #f0b2c1;
+    color: #f2b6c5;
 }
 
 .brand-llc {
-    color: #9e2845;
+    color: #a52847;
 
     font-weight: normal;
 
@@ -124,9 +120,8 @@ body {
 }
 
 
-
 /* =================================
-   MOBILE NAV
+   MOBILE NAVIGATION
 ================================= */
 
 .navbar-default .navbar-toggle {
@@ -134,7 +129,7 @@ body {
 
     margin-right: 20px;
 
-    border: 1px solid #8d2944;
+    border: 1px solid #8e2745;
 
     background: #16080d;
 
@@ -143,22 +138,21 @@ body {
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background: #64152c;
+    background: #68162f;
 
     border-color: #dc607d;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #e7a3b4;
+    background-color: #ecaabd;
 }
-
 
 #mobileMenu {
     background:
         linear-gradient(
             180deg,
-            #12070b,
-            #250b14
+            #13070b,
+            #260a14
         );
 
     border: none;
@@ -189,9 +183,14 @@ body {
 #mobileMenu .navbar-nav > li > a:hover {
     color: white;
 
-    background: #8d1e3a;
+    background:
+        linear-gradient(
+            90deg,
+            #64142c,
+            #941e3e,
+            #64142c
+        );
 }
-
 
 
 /* =================================
@@ -199,7 +198,7 @@ body {
 ================================= */
 
 .hero {
-    min-height: 500px;
+    min-height: 510px;
 
     position: relative;
 
@@ -215,8 +214,8 @@ body {
 
     background:
         linear-gradient(
-            rgba(7, 4, 5, 0.55),
-            rgba(30, 6, 15, 0.82)
+            rgba(5, 4, 5, 0.55),
+            rgba(36, 6, 16, 0.88)
         ),
         url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1800&q=85");
 
@@ -225,8 +224,7 @@ body {
     background-position: center;
 }
 
-
-.hero::before {
+.hero::after {
     content: "";
 
     position: absolute;
@@ -236,26 +234,10 @@ body {
     background:
         radial-gradient(
             circle at center,
-            rgba(150, 30, 60, 0.35),
+            rgba(160, 30, 60, 0.28),
             transparent 55%
         );
 }
-
-
-.hero-overlay {
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(5, 4, 5, 0.75),
-            transparent 50%,
-            rgba(5, 4, 5, 0.75)
-        );
-}
-
 
 .hero-content {
     position: relative;
@@ -267,9 +249,8 @@ body {
     padding: 70px 25px;
 }
 
-
 .hero-small {
-    color: #dc6a84;
+    color: #df6682;
 
     font-size: 12px;
 
@@ -280,11 +261,10 @@ body {
     margin-bottom: 20px;
 }
 
-
 .hero h1 {
     margin: 0;
 
-    color: #fff0f4;
+    color: #fff1f5;
 
     font-family: Georgia, "Times New Roman", serif;
 
@@ -297,11 +277,10 @@ body {
 }
 
 .hero h1 span {
-    color: #df5d7b;
+    color: #df5c7b;
 
     font-style: italic;
 }
-
 
 .hero-divider {
     display: flex;
@@ -338,18 +317,17 @@ body {
 }
 
 .hero-divider b {
-    color: #df5d7b;
+    color: #e05c7b;
 
     font-size: 12px;
 }
 
-
 .hero-text {
-    color: #ecd0d8;
-
-    max-width: 530px;
+    max-width: 550px;
 
     margin: 0 auto 30px;
+
+    color: #eed3db;
 
     font-size: 16px;
 
@@ -357,15 +335,26 @@ body {
 }
 
 
-
 /* =================================
-   HERO BUTTON
+   BUTTONS
 ================================= */
 
-.hero-button {
+.hero-button,
+.category-button,
+.top-button {
     display: inline-block;
 
-    padding: 14px 28px;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    transition: all 0.3s ease;
+}
+
+.hero-button {
+    padding: 15px 28px;
 
     color: white;
 
@@ -374,22 +363,14 @@ body {
     background:
         linear-gradient(
             135deg,
-            #6d142d,
+            #69152e,
             #a72647
         );
 
-    font-size: 12px;
-
-    font-weight: bold;
-
-    letter-spacing: 2px;
-
-    text-decoration: none;
+    font-size: 11px;
 
     box-shadow:
-        0 8px 25px rgba(125, 20, 48, 0.4);
-
-    transition: all 0.3s ease;
+        0 10px 30px rgba(130, 20, 50, 0.45);
 }
 
 .hero-button span {
@@ -406,14 +387,10 @@ body {
     background:
         linear-gradient(
             135deg,
-            #9b2041,
-            #d44d6d
+            #97203f,
+            #d04c6c
         );
-
-    box-shadow:
-        0 12px 30px rgba(190, 45, 78, 0.45);
 }
-
 
 
 /* =================================
@@ -421,21 +398,18 @@ body {
 ================================= */
 
 main {
-    padding: 55px 25px 80px;
+    padding: 60px 25px 90px;
 }
 
 
-
 /* =================================
-   REQUIRED TALL SECTION
+   MENU CONTAINER
 ================================= */
 
 .menu-section {
     position: relative;
 
     max-width: 1250px;
-
-    min-height: 1100px;
 
     margin: auto;
 
@@ -444,51 +418,46 @@ main {
     background:
         linear-gradient(
             145deg,
-            #230b14,
+            #250b15,
             #11080c 55%,
             #090607
         );
 
-    border: 1px solid #5b182b;
+    border: 1px solid #5d182c;
 
     box-shadow:
         0 30px 70px rgba(0, 0, 0, 0.65);
 }
-
 
 .menu-section::before {
     content: "";
 
     position: absolute;
 
-    top: 0;
-
-    bottom: 0;
-
     left: 0;
+
+    top: 0;
+    bottom: 0;
 
     width: 5px;
 
     background:
         linear-gradient(
             180deg,
-            #70142e,
-            #df5876,
-            #70142e
+            #75152f,
+            #e15c79,
+            #75152f
         );
 }
-
 
 .menu-section::after {
     content: "";
 
     position: absolute;
 
-    top: 0;
-
     left: 8%;
-
     right: 8%;
+    top: 0;
 
     height: 2px;
 
@@ -504,15 +473,14 @@ main {
 }
 
 
-
 /* =================================
-   SECTION HEADING
+   INTRO
 ================================= */
 
 .section-heading {
     max-width: 800px;
 
-    margin: 0 auto 55px;
+    margin: 0 auto 70px;
 
     text-align: center;
 }
@@ -534,7 +502,7 @@ main {
 
     color: #f2c2ce;
 
-    font-family: Georgia, "Times New Roman", serif;
+    font-family: Georgia, serif;
 
     font-size: 42px;
 
@@ -557,311 +525,275 @@ main {
 }
 
 .section-description {
-    color: #bd9aa5;
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #c4a0ab;
 
     font-size: 15px;
 
     line-height: 1.8;
-
-    max-width: 650px;
-
-    margin: auto;
 }
 
 
-
 /* =================================
-   FOOD GRID
+   CATEGORY SECTIONS
 ================================= */
 
-.food-grid {
-    display: flex;
-
-    gap: 25px;
-
+.food-category-section {
     max-width: 1100px;
 
-    margin: auto;
+    margin: 0 auto 100px;
+
+    padding-top: 30px;
+
+    scroll-margin-top: 80px;
 }
 
-
-.food-card {
-    flex: 1;
-
-    overflow: hidden;
-
-    background:
-        linear-gradient(
-            160deg,
-            #2a0c17,
-            #10080c
-        );
-
-    border: 1px solid #5b192c;
-
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.45);
-
-    transition:
-        transform 0.35s ease,
-        box-shadow 0.35s ease;
-}
-
-.food-card:hover {
-    transform: translateY(-10px);
-
-    box-shadow:
-        0 25px 50px rgba(0, 0, 0, 0.7),
-        0 0 25px rgba(157, 35, 65, 0.15);
-}
-
-
-
-/* =================================
-   FOOD IMAGE
-================================= */
-
-.food-image {
-    height: 230px;
-
-    position: relative;
-
-    overflow: hidden;
-}
-
-.food-image img {
-    width: 100%;
-
-    height: 100%;
-
-    object-fit: cover;
-
-    display: block;
-
-    transition:
-        transform 0.5s ease,
-        filter 0.5s ease;
-}
-
-.food-card:hover .food-image img {
-    transform: scale(1.08);
-
-    filter:
-        brightness(0.85)
-        saturate(1.15);
-}
-
-
-.image-overlay {
-    position: absolute;
-
-    inset: 0;
-
-    background:
-        linear-gradient(
-            180deg,
-            transparent 50%,
-            rgba(8, 4, 6, 0.85)
-        );
-}
-
-
-.image-overlay span {
-    position: absolute;
-
-    bottom: 15px;
-
-    right: 18px;
-
-    color: #f2aabd;
-
-    font-family: Georgia, serif;
-
-    font-size: 28px;
-
-    font-weight: bold;
-}
-
-
-
-/* =================================
-   FOOD CONTENT
-================================= */
-
-.food-content {
-    padding: 28px 25px 30px;
-}
-
-.food-category {
-    color: #b94360;
-
-    font-size: 10px;
-
-    font-weight: bold;
-
-    letter-spacing: 3px;
-
-    margin-bottom: 10px;
-}
-
-.food-content h3 {
-    margin: 0 0 15px;
-
-    color: #f0bfcb;
-
-    font-family: Georgia, serif;
-
-    font-size: 29px;
-
-    font-weight: normal;
-}
-
-.food-content p:not(.food-category) {
-    color: #c1a0aa;
-
-    font-size: 14px;
-
-    line-height: 1.8;
-
-    min-height: 75px;
-
-    margin-bottom: 20px;
-}
-
-
-
-/* =================================
-   FOOD BUTTON
-================================= */
-
-.food-button {
-    display: inline-flex;
+.category-title {
+    display: flex;
 
     align-items: center;
 
-    justify-content: space-between;
+    gap: 22px;
 
-    width: 100%;
+    margin-bottom: 30px;
 
-    padding: 12px 15px;
+    padding-bottom: 20px;
 
-    color: #eeb6c4;
+    border-bottom: 1px solid #53172a;
+}
 
-    border: 1px solid #6c1c31;
+.category-number {
+    color: #7d2039;
 
-    background: #16090e;
+    font-family: Georgia, serif;
 
-    font-size: 10px;
+    font-size: 38px;
 
     font-weight: bold;
-
-    letter-spacing: 2px;
-
-    text-decoration: none;
-
-    transition: 0.3s ease;
 }
 
-.food-button span {
-    color: #d95372;
-
-    font-size: 18px;
-}
-
-.food-button:hover {
-    color: white;
-
-    text-decoration: none;
-
-    background:
-        linear-gradient(
-            90deg,
-            #67142d,
-            #96203e
-        );
-
-    border-color: #b53a59;
-}
-
-
-
-/* =================================
-   BOTTOM FEATURE
-================================= */
-
-.bottom-feature {
-    text-align: center;
-
-    margin-top: 90px;
-}
-
-.feature-line {
-    width: 100px;
-
-    height: 1px;
-
-    margin: auto auto 20px;
-
-    background: #75203a;
-}
-
-.bottom-feature p {
-    color: #a53b56;
+.category-title p {
+    color: #a73a55;
 
     font-size: 10px;
 
     font-weight: bold;
 
     letter-spacing: 4px;
+
+    margin: 0 0 6px;
 }
 
-.bottom-feature h3 {
-    color: #dcb1bc;
+.category-title h2 {
+    margin: 0;
+
+    color: #f0b9c6;
 
     font-family: Georgia, serif;
 
-    font-size: 24px;
+    font-size: 38px;
 
     font-weight: normal;
-
-    margin-bottom: 25px;
 }
 
 
 /* =================================
-   BACK TO TOP BUTTON
+   MENU ITEMS
 ================================= */
 
-.top-button {
-    display: inline-block;
+.menu-items {
+    display: grid;
 
-    padding: 12px 22px;
+    grid-template-columns: repeat(3, 1fr);
 
-    color: #c95772;
+    gap: 22px;
+}
 
-    border: 1px solid #6a1a30;
+.menu-item {
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            160deg,
+            #2b0c17,
+            #10080c
+        );
+
+    border: 1px solid #5b192c;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.45);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.65);
+}
+
+.menu-item img {
+    width: 100%;
+
+    height: 210px;
+
+    display: block;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+.menu-item:hover img {
+    transform: scale(1.06);
+}
+
+.item-info {
+    padding: 23px;
+}
+
+.item-header {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 15px;
+}
+
+.item-header h3 {
+    margin: 0;
+
+    color: #edb7c5;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    line-height: 1.3;
+}
+
+.item-header span {
+    color: #db5976;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+.item-info p {
+    color: #bd9ca6;
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    margin: 15px 0 0;
+}
+
+
+/* =================================
+   CATEGORY BUTTON
+================================= */
+
+.category-button {
+    margin-top: 28px;
+
+    padding: 11px 20px;
+
+    color: #c95a75;
+
+    border: 1px solid #62192e;
+
+    background: #10070b;
+
+    font-size: 9px;
+}
+
+.category-button:hover {
+    color: white;
+
+    text-decoration: none;
+
+    background: #74172f;
+
+    border-color: #a83453;
+}
+
+
+/* =================================
+   BOTTOM
+================================= */
+
+.bottom-feature {
+    text-align: center;
+
+    margin-top: 30px;
+
+    padding-top: 70px;
+
+    border-top: 1px solid #4d1527;
+}
+
+.feature-line {
+    width: 80px;
+
+    height: 2px;
+
+    margin: 0 auto 20px;
+
+    background: #9e2847;
+}
+
+.bottom-feature p {
+    color: #a33b56;
 
     font-size: 10px;
 
     font-weight: bold;
 
-    letter-spacing: 2px;
+    letter-spacing: 5px;
+}
 
-    text-decoration: none;
+.bottom-feature h3 {
+    margin: 15px 0 25px;
 
-    transition: 0.3s ease;
+    color: #dcb3be;
+
+    font-family: Georgia, serif;
+
+    font-size: 25px;
+
+    font-weight: normal;
+}
+
+.top-button {
+    padding: 12px 22px;
+
+    color: #d15c78;
+
+    border: 1px solid #681b31;
+
+    font-size: 9px;
 }
 
 .top-button:hover {
     color: white;
 
-    background: #71162f;
-
-    border-color: #a83251;
+    background: #74172f;
 
     text-decoration: none;
 }
-
 
 
 /* =================================
@@ -878,12 +810,15 @@ main {
         padding: 60px 35px;
     }
 
-    .food-grid {
+    .menu-items {
         gap: 15px;
     }
 
-}
+    .menu-item img {
+        height: 180px;
+    }
 
+}
 
 
 /* =================================
@@ -899,11 +834,17 @@ main {
     }
 
     .hero {
-        min-height: 430px;
+        min-height: 450px;
     }
 
     .hero h1 {
         font-size: 50px;
+    }
+
+    .hero-small {
+        font-size: 9px;
+
+        letter-spacing: 3px;
     }
 
     .hero-text {
@@ -915,8 +856,6 @@ main {
     }
 
     .menu-section {
-        min-height: 1100px;
-
         padding: 50px 18px;
     }
 
@@ -924,28 +863,37 @@ main {
         font-size: 33px;
     }
 
-    .section-description {
-        font-size: 14px;
+    .food-category-section {
+        margin-bottom: 70px;
     }
 
-    .food-grid {
+    .category-title h2 {
+        font-size: 32px;
+    }
+
+    .category-number {
+        font-size: 30px;
+    }
+
+    .menu-items {
         display: block;
     }
 
-    .food-card {
-        margin-bottom: 25px;
+    .menu-item {
+        margin-bottom: 20px;
     }
 
-    .food-image {
-        height: 220px;
+    .menu-item img {
+        height: 230px;
     }
 
-    .food-content p:not(.food-category) {
-        min-height: auto;
+    .item-header h3 {
+        font-size: 21px;
     }
 
-    .bottom-feature {
-        margin-top: 60px;
+    .bottom-feature h3 {
+        font-size: 21px;
+        line-height: 1.5;
     }
 
 }
