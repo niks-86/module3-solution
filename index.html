@@ -7,24 +7,21 @@
 
     <title>Food, LLC</title>
 
-    <!-- Bootstrap CSS -->
     <link rel="stylesheet"
           href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
-    <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
+    <!-- Navigation -->
     <nav class="navbar navbar-default">
 
         <div class="container-fluid">
 
             <div class="navbar-header">
 
-                <!-- Mobile Menu Button -->
                 <button type="button"
                         class="navbar-toggle collapsed visible-xs"
                         data-toggle="collapse"
@@ -38,9 +35,9 @@
 
                 </button>
 
-                <!-- Brand -->
                 <a class="navbar-brand" href="#">
-                    <span class="brand-main">Food</span>
+                    <span class="brand-icon">◆</span>
+                    <span class="brand-name">FOOD</span>
                     <span class="brand-llc">, LLC</span>
                 </a>
 
@@ -53,21 +50,15 @@
                 <ul class="nav navbar-nav">
 
                     <li>
-                        <a href="#chicken">
-                            Chicken
-                        </a>
+                        <a href="#chicken">Chicken</a>
                     </li>
 
                     <li>
-                        <a href="#beef">
-                            Beef
-                        </a>
+                        <a href="#beef">Beef</a>
                     </li>
 
                     <li>
-                        <a href="#sushi">
-                            Sushi
-                        </a>
+                        <a href="#sushi">Sushi</a>
                     </li>
 
                 </ul>
@@ -79,20 +70,40 @@
     </nav>
 
 
-    <!-- Page Title -->
-    <div class="page-title">
+    <!-- Hero / Page Heading -->
+    <header class="hero">
 
-        <h1>
-            Our Menu
-        </h1>
+        <div class="hero-glow"></div>
 
-        <div class="title-line"></div>
+        <div class="hero-content">
 
-    </div>
+            <p class="eyebrow">
+                GOOD FOOD • GOOD MOOD
+            </p>
+
+            <h1>
+                Our <span>Menu</span>
+            </h1>
+
+            <div class="hero-line">
+                <span>◆</span>
+            </div>
+
+            <p class="hero-description">
+                Discover flavorful dishes crafted with care,
+                passion, and a little something special.
+            </p>
+
+        </div>
+
+        <div class="hero-circle circle-one"></div>
+        <div class="hero-circle circle-two"></div>
+
+    </header>
 
 
     <!-- Main Content -->
-    <div class="container-fluid">
+    <main class="container-fluid">
 
         <div class="row">
 
@@ -100,54 +111,77 @@
 
                 <section class="menu-section">
 
-                    <div class="section-decoration"></div>
+                    <div class="section-number">
+                        01
+                    </div>
 
-                    <h2>
-                        Welcome to Food, LLC
-                    </h2>
+                    <div class="section-heading">
 
-                    <p>
-                        Welcome to Food, LLC, where great food meets a warm
-                        and modern dining experience. We offer a variety of
-                        dishes prepared with quality ingredients and care.
-                    </p>
+                        <p class="small-heading">
+                            WELCOME TO
+                        </p>
 
-                    <p>
-                        Our menu includes flavorful chicken dishes,
-                        satisfying beef meals, and fresh sushi selections.
-                        Each dish is prepared to give our customers a
-                        delicious meal that they can enjoy anytime.
-                    </p>
+                        <h2>
+                            Food, LLC
+                        </h2>
 
-                    <p>
-                        Whether you are looking for something comforting,
-                        something filling, or something fresh, Food, LLC
-                        has something for you. Take your time, explore our
-                        menu, and enjoy your dining experience.
-                    </p>
+                        <div class="heading-line"></div>
 
-                    <div class="food-highlight">
+                    </div>
 
-                        <span class="highlight-item">
-                            CHICKEN
-                        </span>
 
-                        <span class="highlight-dot">
-                            ◆
-                        </span>
+                    <div class="content-wrapper">
 
-                        <span class="highlight-item">
-                            BEEF
-                        </span>
+                        <p>
+                            Welcome to Food, LLC, where great food meets
+                            a warm and modern dining experience. We believe
+                            that every meal should be something worth
+                            remembering.
+                        </p>
 
-                        <span class="highlight-dot">
-                            ◆
-                        </span>
+                        <p>
+                            Our menu brings together flavorful chicken,
+                            satisfying beef, and fresh sushi selections.
+                            Every dish is prepared with quality ingredients
+                            and attention to detail.
+                        </p>
 
-                        <span class="highlight-item">
-                            SUSHI
-                        </span>
+                        <p>
+                            Whether you are looking for something comforting,
+                            something filling, or something fresh, Food, LLC
+                            has something for you. Sit back, explore our
+                            menu, and enjoy every bite.
+                        </p>
 
+                    </div>
+
+
+                    <!-- Menu Categories -->
+                    <div class="category-wrapper">
+
+                        <div class="category">
+                            <div class="category-icon">♢</div>
+                            <h3>CHICKEN</h3>
+                            <p>Rich & flavorful</p>
+                        </div>
+
+                        <div class="category">
+                            <div class="category-icon">◇</div>
+                            <h3>BEEF</h3>
+                            <p>Hearty & satisfying</p>
+                        </div>
+
+                        <div class="category">
+                            <div class="category-icon">✧</div>
+                            <h3>SUSHI</h3>
+                            <p>Fresh & delicate</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="bottom-message">
+                        <span>FOOD MADE WITH PASSION</span>
                     </div>
 
                 </section>
@@ -156,13 +190,11 @@
 
         </div>
 
-    </div>
+    </main>
 
 
-    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
-    <!-- Bootstrap JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </body>
