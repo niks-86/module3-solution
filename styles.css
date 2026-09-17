@@ -1,0 +1,292 @@
+```css
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg, #0b0809, #1b0a10, #3a0d19);
+    color: #f5dce3;
+    min-height: 100vh;
+}
+
+
+/* =========================
+   NAVIGATION BAR
+   ========================= */
+
+.navbar {
+    background: #090708;
+    border: none;
+    border-bottom: 3px solid #8f1d35;
+    border-radius: 0;
+    margin-bottom: 0;
+    min-height: 70px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand {
+    padding: 20px 15px;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.brand-main {
+    color: #e7a0b3;
+}
+
+.brand-llc {
+    color: #c92d4d;
+}
+
+
+/* =========================
+   MOBILE MENU BUTTON
+   ========================= */
+
+.navbar-default .navbar-toggle {
+    border-color: #a62a46;
+    margin-top: 18px;
+}
+
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: #45101d;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #e7a0b3;
+}
+
+
+/* =========================
+   MOBILE MENU
+   ========================= */
+
+#mobileMenu {
+    background: #16090d;
+    border-top: 1px solid #6e182b;
+}
+
+#mobileMenu .navbar-nav {
+    margin: 0 -15px;
+}
+
+#mobileMenu .navbar-nav > li > a {
+    color: #f0cbd4;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    padding: 16px;
+    border-top: 1px solid #4a111e;
+    transition: 0.3s;
+}
+
+#mobileMenu .navbar-nav > li > a:hover {
+    color: white;
+    background-color: #8f1d35;
+}
+
+
+/* =========================
+   PAGE TITLE
+   ========================= */
+
+.page-title {
+    text-align: center;
+    padding: 45px 20px 35px;
+}
+
+.page-title h1 {
+    color: #f3b7c6;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 0 3px 10px #000;
+}
+
+.title-line {
+    width: 90px;
+    height: 4px;
+    background: linear-gradient(to right, #7d1830, #df5572);
+    margin: 15px auto 0;
+    border-radius: 10px;
+}
+
+
+/* =========================
+   MENU SECTION
+   ========================= */
+
+.menu-section {
+    position: relative;
+
+    background: linear-gradient(
+        145deg,
+        #180b10,
+        #2c0d17,
+        #12090c
+    );
+
+    border: 1px solid #642033;
+    border-left: 5px solid #a52240;
+
+    min-height: 1000px;
+
+    padding: 45px 35px;
+
+    margin-bottom: 40px;
+
+    box-shadow:
+        0 10px 35px rgba(0, 0, 0, 0.45),
+        inset 0 0 40px rgba(142, 25, 53, 0.08);
+}
+
+
+/* Decorative top line */
+
+.menu-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+
+    background: linear-gradient(
+        to right,
+        #71142b,
+        #dc4968,
+        #71142b
+    );
+}
+
+
+/* Decorative corner */
+
+.menu-section::after {
+    content: "✦";
+    position: absolute;
+    top: 20px;
+    right: 25px;
+
+    color: #b82b4b;
+    font-size: 24px;
+}
+
+
+/* =========================
+   SECTION CONTENT
+   ========================= */
+
+.menu-section h2 {
+    color: #f0a9bb;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.menu-section p {
+    max-width: 900px;
+    margin: 0 auto 25px;
+
+    color: #ead1d8;
+
+    font-size: 17px;
+    line-height: 1.9;
+}
+
+
+/* =========================
+   FOOD HIGHLIGHTS
+   ========================= */
+
+.food-highlight {
+    text-align: center;
+    margin-top: 60px;
+    padding: 25px 10px;
+
+    border-top: 1px solid #672037;
+    border-bottom: 1px solid #672037;
+}
+
+.highlight-item {
+    color: #df6b85;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.highlight-dot {
+    color: #8d1d38;
+    margin: 0 18px;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+
+@media (min-width: 768px) {
+
+    .navbar-brand {
+        padding-left: 25px;
+    }
+
+    .menu-section {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .page-title h1 {
+        font-size: 45px;
+    }
+
+}
+
+
+@media (max-width: 767px) {
+
+    .navbar {
+        min-height: 65px;
+    }
+
+    .navbar-brand {
+        font-size: 23px;
+        padding-top: 19px;
+    }
+
+    .page-title {
+        padding-top: 35px;
+    }
+
+    .page-title h1 {
+        font-size: 32px;
+    }
+
+    .menu-section {
+        min-height: 1000px;
+        padding: 35px 22px;
+    }
+
+    .menu-section h2 {
+        font-size: 25px;
+        line-height: 1.4;
+    }
+
+    .menu-section p {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+
+    .food-highlight {
+        line-height: 2.5;
+    }
+
+    .highlight-dot {
+        margin: 0 8px;
+    }
+
+}
+```
