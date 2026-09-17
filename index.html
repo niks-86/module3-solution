@@ -1,623 +1,681 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Food, LLC</title>
+    <title>Food, LLC | Our Menu</title>
 
     <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="css/styles.css">
-
 </head>
 
+<body id="top">
 
-<body>
+    <!-- NAVBAR -->
+
+    <nav class="navbar navbar-inverse custom-navbar">
+
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+
+                <button type="button"
+                        class="navbar-toggle collapsed"
+                        data-toggle="collapse"
+                        data-target="#foodNavbar">
+
+                    <span class="sr-only">Toggle navigation</span>
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+
+                </button>
+
+                <a class="navbar-brand" href="#top">
+                    FOOD<span>, LLC</span>
+                </a>
+
+            </div>
+
+            <div id="foodNavbar" class="collapse navbar-collapse">
+
+                <ul class="nav navbar-nav navbar-right visible-xs">
+
+                    <li>
+                        <a href="#chicken">Chicken</a>
+                    </li>
+
+                    <li>
+                        <a href="#beef">Beef</a>
+                    </li>
+
+                    <li>
+                        <a href="#sushi">Sushi</a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
 
 
-<!-- =========================
-     NAVIGATION
-========================= -->
+    <!-- HERO -->
 
-<nav class="navbar navbar-default">
+    <header class="hero-section">
 
-    <div class="container-fluid">
+        <div class="hero-overlay">
 
-        <div class="navbar-header">
+            <div class="container">
 
-            <button type="button"
-                    class="navbar-toggle collapsed visible-xs"
-                    data-toggle="collapse"
-                    data-target="#mobileMenu">
+                <div class="hero-content">
 
-                <span class="sr-only">Toggle navigation</span>
+                    <p class="small-title">
+                        FOOD, LLC
+                    </p>
 
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                    <h1>
+                        GOOD FOOD.
+                        <span>GOOD MOOD.</span>
+                    </h1>
 
-            </button>
+                    <p class="hero-text">
+                        A collection of satisfying favorites prepared
+                        with bold flavors, comforting ingredients,
+                        and a little something for every craving.
+                    </p>
+
+                    <a href="#our-menu" class="hero-button">
+                        EXPLORE OUR MENU
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
 
 
-            <a class="navbar-brand" href="#top">
+    <!-- MENU INTRO -->
 
-                <span class="brand-symbol">◆</span>
+    <section id="our-menu" class="menu-intro">
 
-                <span class="brand-name">FOOD</span>
+        <div class="container">
 
-                <span class="brand-llc">, LLC</span>
+            <p class="eyebrow">
+                OUR SELECTION
+            </p>
 
+            <h2>
+                Our Menu
+            </h2>
+
+            <div class="title-line"></div>
+
+            <p>
+                Choose from our carefully selected chicken, beef,
+                and sushi dishes. Each category brings its own
+                flavor, style, and character to the table.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU -->
+
+    <main>
+
+
+        <!-- =========================
+             CHICKEN
+        ========================== -->
+
+        <section id="chicken" class="menu-category chicken-category">
+
+            <div class="container">
+
+                <div class="category-heading">
+
+                    <span class="category-number">
+                        01
+                    </span>
+
+                    <div>
+
+                        <p class="category-label">
+                            SIGNATURE SELECTION
+                        </p>
+
+                        <h2>
+                            Chicken
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <p class="category-description">
+                    Comforting chicken dishes prepared with rich
+                    seasoning, satisfying textures, and familiar
+                    flavors that make every meal feel complete.
+                </p>
+
+
+                <div class="dish-list">
+
+
+                    <!-- DISH 1 -->
+
+                    <article class="dish-card">
+
+                        <div class="dish-number">
+                            01
+                        </div>
+
+                        <div class="dish-content">
+
+                            <div class="dish-top">
+
+                                <h3>
+                                    Crispy Fried Chicken
+                                </h3>
+
+                                <span class="dish-price">
+                                    $12
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Golden and crispy on the outside,
+                                tender and juicy inside. A classic
+                                chicken favorite with a satisfying
+                                crunch and savory seasoning.
+                            </p>
+
+                            <span class="dish-tag">
+                                CRISPY • SAVORY • CLASSIC
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- DISH 2 -->
+
+                    <article class="dish-card">
+
+                        <div class="dish-number">
+                            02
+                        </div>
+
+                        <div class="dish-content">
+
+                            <div class="dish-top">
+
+                                <h3>
+                                    Grilled Chicken
+                                </h3>
+
+                                <span class="dish-price">
+                                    $14
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Tender grilled chicken seasoned with
+                                aromatic herbs and spices. Light,
+                                flavorful, and perfect for a satisfying
+                                meal without being too heavy.
+                            </p>
+
+                            <span class="dish-tag">
+                                GRILLED • TENDER • HERBED
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- DISH 3 -->
+
+                    <article class="dish-card">
+
+                        <div class="dish-number">
+                            03
+                        </div>
+
+                        <div class="dish-content">
+
+                            <div class="dish-top">
+
+                                <h3>
+                                    Chicken Rice Bowl
+                                </h3>
+
+                                <span class="dish-price">
+                                    $13
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Seasoned chicken served with warm rice
+                                and fresh vegetables, finished with
+                                a flavorful sauce for a balanced
+                                and filling bowl.
+                            </p>
+
+                            <span class="dish-tag">
+                                HEARTY • FRESH • FILLING
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <a href="#our-menu" class="back-button">
+                    ↑ BACK TO MENU
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             BEEF
+        ========================== -->
+
+        <section id="beef" class="menu-category beef-category">
+
+            <div class="container">
+
+                <div class="category-heading">
+
+                    <span class="category-number">
+                        02
+                    </span>
+
+                    <div>
+
+                        <p class="category-label">
+                            HEARTY FAVORITES
+                        </p>
+
+                        <h2>
+                            Beef
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <p class="category-description">
+                    Rich and satisfying beef dishes made for those
+                    who enjoy bold flavors, hearty portions, and
+                    a meal that leaves a lasting impression.
+                </p>
+
+
+                <div class="dish-list">
+
+
+                    <!-- DISH 1 -->
+
+                    <article class="dish-card">
+
+                        <div class="dish-number">
+                            01
+                        </div>
+
+                        <div class="dish-content">
+
+                            <div class="dish-top">
+
+                                <h3>
+                                    Grilled Beef Steak
+                                </h3>
+
+                                <span class="dish-price">
+                                    $22
+                                </span>
+
+                            </div>
+
+                            <p>
+                                A juicy cut of beef grilled to bring
+                                out its natural flavor, finished with
+                                savory seasoning and served as a
+                                hearty centerpiece.
+                            </p>
+
+                            <span class="dish-tag">
+                                JUICY • BOLD • SIGNATURE
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- DISH 2 -->
+
+                    <article class="dish-card">
+
+                        <div class="dish-number">
+                            02
+                        </div>
+
+                        <div class="dish-content">
+
+                            <div class="dish-top">
+
+                                <h3>
+                                    Classic Beef Steak
+                                </h3>
+
+                                <span class="dish-price">
+                                    $24
+                                </span>
+
+                            </div>
+
+                            <p>
+                                A classic steak experience featuring
+                                tender beef, deep savory flavors,
+                                and simple seasoning that lets the
+                                main ingredient stand out.
+                            </p>
+
+                            <span class="dish-tag">
+                                CLASSIC • RICH • SAVORY
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- DISH 3 -->
+
+                    <article class="dish-card">
+
+                        <div class="dish-number">
+                            03
+                        </div>
+
+                        <div class="dish-content">
+
+                            <div class="dish-top">
+
+                                <h3>
+                                    Signature Beef Plate
+                                </h3>
+
+                                <span class="dish-price">
+                                    $20
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Tender beef paired with satisfying
+                                sides and a flavorful sauce, creating
+                                a complete plate for a hearty dining
+                                experience.
+                            </p>
+
+                            <span class="dish-tag">
+                                HEARTY • SAVORY • COMPLETE
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <a href="#our-menu" class="back-button">
+                    ↑ BACK TO MENU
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =========================
+             SUSHI
+        ========================== -->
+
+        <section id="sushi" class="menu-category sushi-category">
+
+            <div class="container">
+
+                <div class="category-heading">
+
+                    <span class="category-number">
+                        03
+                    </span>
+
+                    <div>
+
+                        <p class="category-label">
+                            FRESH FAVORITES
+                        </p>
+
+                        <h2>
+                            Sushi
+                        </h2>
+
+                    </div>
+
+                </div>
+
+                <p class="category-description">
+                    Fresh and carefully prepared sushi selections
+                    featuring delicate flavors, balanced textures,
+                    and clean presentation.
+                </p>
+
+
+                <div class="dish-list">
+
+
+                    <!-- DISH 1 -->
+
+                    <article class="dish-card">
+
+                        <div class="dish-number">
+                            01
+                        </div>
+
+                        <div class="dish-content">
+
+                            <div class="dish-top">
+
+                                <h3>
+                                    Sushi Platter
+                                </h3>
+
+                                <span class="dish-price">
+                                    $18
+                                </span>
+
+                            </div>
+
+                            <p>
+                                A colorful assortment of sushi
+                                selections designed to provide
+                                different flavors and textures in
+                                one satisfying platter.
+                            </p>
+
+                            <span class="dish-tag">
+                                FRESH • COLORFUL • VARIED
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- DISH 2 -->
+
+                    <article class="dish-card">
+
+                        <div class="dish-number">
+                            02
+                        </div>
+
+                        <div class="dish-content">
+
+                            <div class="dish-top">
+
+                                <h3>
+                                    Fresh Sushi Rolls
+                                </h3>
+
+                                <span class="dish-price">
+                                    $16
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Carefully rolled sushi filled with
+                                fresh ingredients and seasoned rice,
+                                offering a light meal with balanced
+                                and delicate flavors.
+                            </p>
+
+                            <span class="dish-tag">
+                                FRESH • LIGHT • BALANCED
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- DISH 3 -->
+
+                    <article class="dish-card">
+
+                        <div class="dish-number">
+                            03
+                        </div>
+
+                        <div class="dish-content">
+
+                            <div class="dish-top">
+
+                                <h3>
+                                    Salmon Sushi
+                                </h3>
+
+                                <span class="dish-price">
+                                    $19
+                                </span>
+
+                            </div>
+
+                            <p>
+                                Smooth salmon paired with seasoned
+                                sushi rice for a simple combination
+                                that highlights fresh flavor and
+                                delicate texture.
+                            </p>
+
+                            <span class="dish-tag">
+                                SALMON • DELICATE • FRESH
+                            </span>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <a href="#our-menu" class="back-button">
+                    ↑ BACK TO MENU
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="footer-logo">
+                FOOD<span>, LLC</span>
+            </div>
+
+            <p>
+                Good food brings people together.
+            </p>
+
+            <div class="footer-line"></div>
+
+            <a href="#top" class="footer-button">
+                RETURN TO TOP ↑
             </a>
 
-        </div>
-
-
-        <div id="mobileMenu"
-             class="collapse navbar-collapse visible-xs">
-
-            <ul class="nav navbar-nav">
-
-                <li>
-                    <a href="#chicken">
-                        Chicken
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#beef">
-                        Beef
-                    </a>
-                </li>
-
-                <li>
-                    <a href="#sushi">
-                        Sushi
-                    </a>
-                </li>
-
-            </ul>
+            <p class="copyright">
+                © 2026 Food, LLC. All Rights Reserved.
+            </p>
 
         </div>
 
-    </div>
+    </footer>
 
-</nav>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-<!-- =========================
-     HERO
-========================= -->
+    <script>
 
-<header class="hero" id="top">
+        $(document).ready(function () {
 
-    <div class="hero-overlay"></div>
+            $(".navbar-nav li a").click(function () {
 
-    <div class="hero-content">
+                $(".navbar-collapse").collapse("hide");
 
-        <p class="hero-small">
-            WELCOME TO FOOD, LLC
-        </p>
+            });
 
-        <h1>
-            Our <span>Menu</span>
-        </h1>
+        });
 
-        <div class="hero-divider">
-
-            <span></span>
-
-            <b>◆</b>
-
-            <span></span>
-
-        </div>
-
-        <p class="hero-text">
-            Carefully prepared dishes, bold flavors,
-            and something delicious for everyone.
-        </p>
-
-        <a href="#chicken" class="hero-button">
-            EXPLORE OUR MENU
-            <span>↓</span>
-        </a>
-
-    </div>
-
-</header>
-
-
-
-<!-- =========================
-     MAIN MENU
-========================= -->
-
-<main class="container-fluid">
-
-    <div class="row">
-
-        <div class="col-xs-12">
-
-            <section class="menu-section">
-
-
-                <!-- INTRO -->
-
-                <div class="section-heading">
-
-                    <p class="section-label">
-                        FOOD • FLAVOR • EXPERIENCE
-                    </p>
-
-                    <h2>
-                        Something for Everyone
-                    </h2>
-
-                    <div class="heading-line"></div>
-
-                    <p class="section-description">
-                        Explore our carefully selected dishes,
-                        prepared to bring together familiar flavors
-                        and a modern dining experience.
-                    </p>
-
-                </div>
-
-
-
-                <!-- =========================
-                     CHICKEN
-                ========================= -->
-
-                <section class="food-category-section" id="chicken">
-
-                    <div class="category-title">
-
-                        <span class="category-number">
-                            01
-                        </span>
-
-                        <div>
-
-                            <p>
-                                SIGNATURE SELECTION
-                            </p>
-
-                            <h2>
-                                Chicken
-                            </h2>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="menu-items">
-
-
-                        <article class="menu-item">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1532550907401-a500c9a57435?auto=format&fit=crop&w=900&q=80"
-                                alt="Grilled chicken">
-
-                            <div class="item-info">
-
-                                <div class="item-header">
-
-                                    <h3>
-                                        Classic Grilled Chicken
-                                    </h3>
-
-                                    <span>
-                                        ₱285
-                                    </span>
-
-                                </div>
-
-                                <p>
-                                    Juicy grilled chicken seasoned with
-                                    herbs and spices, served with
-                                    vegetables and a flavorful sauce.
-                                </p>
-
-                            </div>
-
-                        </article>
-
-
-
-                        <article class="menu-item">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=900&q=80"
-                                alt="Chicken rice meal">
-
-                            <div class="item-info">
-
-                                <div class="item-header">
-
-                                    <h3>
-                                        Chicken Rice Bowl
-                                    </h3>
-
-                                    <span>
-                                        ₱245
-                                    </span>
-
-                                </div>
-
-                                <p>
-                                    Tender chicken served over warm
-                                    steamed rice with vegetables and
-                                    our house-made savory sauce.
-                                </p>
-
-                            </div>
-
-                        </article>
-
-
-
-                        <article class="menu-item">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1527477396000-e27163b481c2?auto=format&fit=crop&w=900&q=80"
-                                alt="Crispy chicken">
-
-                            <div class="item-info">
-
-                                <div class="item-header">
-
-                                    <h3>
-                                        Crispy Chicken
-                                    </h3>
-
-                                    <span>
-                                        ₱265
-                                    </span>
-
-                                </div>
-
-                                <p>
-                                    Golden crispy chicken with a
-                                    crunchy coating and a rich
-                                    dipping sauce.
-                                </p>
-
-                            </div>
-
-                        </article>
-
-                    </div>
-
-
-                    <a href="#top" class="category-button">
-                        BACK TO MENU ↑
-                    </a>
-
-                </section>
-
-
-
-                <!-- =========================
-                     BEEF
-                ========================= -->
-
-                <section class="food-category-section" id="beef">
-
-                    <div class="category-title">
-
-                        <span class="category-number">
-                            02
-                        </span>
-
-                        <div>
-
-                            <p>
-                                HEARTY FAVORITES
-                            </p>
-
-                            <h2>
-                                Beef
-                            </h2>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="menu-items">
-
-
-                        <article class="menu-item">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=900&q=80"
-                                alt="Beef steak">
-
-                            <div class="item-info">
-
-                                <div class="item-header">
-
-                                    <h3>
-                                        House Steak
-                                    </h3>
-
-                                    <span>
-                                        ₱420
-                                    </span>
-
-                                </div>
-
-                                <p>
-                                    Tender beef steak grilled to
-                                    perfection and served with
-                                    vegetables and our signature sauce.
-                                </p>
-
-                            </div>
-
-                        </article>
-
-
-
-                        <article class="menu-item">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=900&q=80"
-                                alt="Beef burger">
-
-                            <div class="item-info">
-
-                                <div class="item-header">
-
-                                    <h3>
-                                        Classic Beef Burger
-                                    </h3>
-
-                                    <span>
-                                        ₱295
-                                    </span>
-
-                                </div>
-
-                                <p>
-                                    Juicy seasoned beef patty with
-                                    fresh vegetables, cheese, and
-                                    our house burger sauce.
-                                </p>
-
-                            </div>
-
-                        </article>
-
-
-
-                        <article class="menu-item">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=900&q=80"
-                                alt="Beef dumplings">
-
-                            <div class="item-info">
-
-                                <div class="item-header">
-
-                                    <h3>
-                                        Beef Dumplings
-                                    </h3>
-
-                                    <span>
-                                        ₱230
-                                    </span>
-
-                                </div>
-
-                                <p>
-                                    Savory beef-filled dumplings
-                                    served with a flavorful dipping
-                                    sauce.
-                                </p>
-
-                            </div>
-
-                        </article>
-
-                    </div>
-
-
-                    <a href="#top" class="category-button">
-                        BACK TO MENU ↑
-                    </a>
-
-                </section>
-
-
-
-                <!-- =========================
-                     SUSHI
-                ========================= -->
-
-                <section class="food-category-section" id="sushi">
-
-                    <div class="category-title">
-
-                        <span class="category-number">
-                            03
-                        </span>
-
-                        <div>
-
-                            <p>
-                                FRESH SELECTION
-                            </p>
-
-                            <h2>
-                                Sushi
-                            </h2>
-
-                        </div>
-
-                    </div>
-
-
-                    <div class="menu-items">
-
-
-                        <article class="menu-item">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=900&q=80"
-                                alt="Sushi platter">
-
-                            <div class="item-info">
-
-                                <div class="item-header">
-
-                                    <h3>
-                                        Classic Sushi Platter
-                                    </h3>
-
-                                    <span>
-                                        ₱395
-                                    </span>
-
-                                </div>
-
-                                <p>
-                                    A selection of fresh sushi rolls
-                                    prepared with carefully chosen
-                                    ingredients and served together.
-                                </p>
-
-                            </div>
-
-                        </article>
-
-
-
-                        <article class="menu-item">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=900&q=80"
-                                alt="Salmon sushi">
-
-                            <div class="item-info">
-
-                                <div class="item-header">
-
-                                    <h3>
-                                        Salmon Sushi
-                                    </h3>
-
-                                    <span>
-                                        ₱350
-                                    </span>
-
-                                </div>
-
-                                <p>
-                                    Fresh salmon paired with seasoned
-                                    sushi rice and a light touch of
-                                    traditional seasoning.
-                                </p>
-
-                            </div>
-
-                        </article>
-
-
-
-                        <article class="menu-item">
-
-                            <img
-                                src="https://images.unsplash.com/photo-1617196034796-73dfa7b1fd56?auto=format&fit=crop&w=900&q=80"
-                                alt="Sushi rolls">
-
-                            <div class="item-info">
-
-                                <div class="item-header">
-
-                                    <h3>
-                                        Signature Sushi Rolls
-                                    </h3>
-
-                                    <span>
-                                        ₱375
-                                    </span>
-
-                                </div>
-
-                                <p>
-                                    Beautifully presented sushi rolls
-                                    combining fresh ingredients with
-                                    our signature flavors.
-                                </p>
-
-                            </div>
-
-                        </article>
-
-                    </div>
-
-
-                    <a href="#top" class="category-button">
-                        BACK TO MENU ↑
-                    </a>
-
-                </section>
-
-
-
-                <!-- =========================
-                     FINAL MESSAGE
-                ========================= -->
-
-                <div class="bottom-feature">
-
-                    <div class="feature-line"></div>
-
-                    <p>
-                        FOOD • PASSION • FLAVOR
-                    </p>
-
-                    <h3>
-                        Good food brings people together.
-                    </h3>
-
-                    <a href="#top" class="top-button">
-                        RETURN TO TOP ↑
-                    </a>
-
-                </div>
-
-
-            </section>
-
-        </div>
-
-    </div>
-
-</main>
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js">
-</script>
-
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
-</script>
-
+    </script>
 
 </body>
-
 </html>
-```
